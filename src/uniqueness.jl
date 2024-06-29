@@ -31,7 +31,7 @@ function _generate!(
     pool::Vector{CartesianIndex},
     sampler::Uniqueness,
     uncertainty,
-) where {T <: AbstractFloat}
+)
     layers = sampler.layers
     ndims(layers) <= 2 && throw(ArgumentError("Uniqueness needs more than one layer to work."))
     size(uncertainty) != (size(layers,1), size(layers,2)) && throw(DimensionMismatch("Layers are not the same dimension as uncertainty"))

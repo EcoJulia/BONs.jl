@@ -33,6 +33,7 @@ refine!
 ## Seeder algorithms
 
 ```@docs
+SimpleRandom
 BalancedAcceptance
 ```
 
@@ -40,6 +41,7 @@ BalancedAcceptance
 
 ```@docs
 AdaptiveSpatial
+CubeSampling
 Uniqueness
 ```
 
