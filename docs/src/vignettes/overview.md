@@ -20,7 +20,8 @@ U = rand(MidpointDisplacement(0.5), (100, 100))
 heatmap(U)
 ```
 
-In practice, this uncertainty matrix is likely to be derived from an application of the hyper-parameters optimization step, which is detailed in other vignettes.
+In practice, this uncertainty matrix is likely to be derived from an application
+of the hyper-parameters optimization step, which is detailed in other vignettes.
 
 The first step of defining a series of locations to sample is to use a
 `BONSeeder`, which will generate a number of relatively coarse proposals that
