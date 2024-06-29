@@ -83,6 +83,10 @@ directly in a pipeline. Proposed sampling locations can then be overlayed onto
 the original uncertainty matrix: 
 
 ```@example 1
-plt = heatmap(U)
-#scatter!(plt, [x[1] for x in locations], [x[2] for x in locations], ms=2.5, mc=:white, label="")
+fig = Figure()
+ax = Axis(fig[1,1])
+heatmap!(ax, U)
+scatter!(ax, [x[1] for x in locations], [x[2] for x in locations], markersize=2.5, color=:white, label="")
+hidedecorations!(ax)
+current_figure()
 ```
